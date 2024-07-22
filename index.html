@@ -4,82 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agronomía y Agricultura</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Enlazar Bootstrap CSS -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <style>
-      /* Agrega estilos para las imágenes pequeñas */
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 10px auto;
-      }
-
-      /* Estilo para el botón de WhatsApp */
-      .whatsapp-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #25d366;
-        color: white;
-        padding: 15px;
-        border-radius: 50%;
-        font-size: 18px;
-        text-align: center;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
-
-      .whatsapp-button img {
-        width: 32px; /* Tamaño del icono de WhatsApp */
-        height: auto;
-        vertical-align: middle;
-      }
-
-      header {
-        background-color: #f8f9fa;
-        padding: 10px 0;
-      }
-
-      nav ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      nav ul li {
-        display: inline;
-        margin-right: 15px;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: #007bff;
-      }
-
-      footer {
-        background-color: #f8f9fa;
-        padding: 10px 0;
-        text-align: center;
-      }
-    </style>
   </head>
   <body>
     <header class="container">
       <h1 class="text-center">RESEARCH KOY SAS</h1>
       <nav class="text-center">
-        <ul>
-          <li><a href="#intro">Introducción</a></li>
-          <li><a href="#crops">Cultivos</a></li>
-          <li><a href="#technology">Tecnología</a></li>
-          <li><a href="#sustainability">Sostenibilidad</a></li>
-          <li><a href="#contact">Contacto</a></li>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#intro">Introducción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#crops">Cultivos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#technology">Tecnología</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sustainability">Sostenibilidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -108,7 +59,7 @@
           velocidad de crecimiento de las plantas, promoviendo una agricultura
           más sostenible y productiva.
         </p>
-        <img src="img2/im2.jpg" alt="Campo de cultivo" />
+        <img src="img2/im2.jpg" alt="Cultivos" class="img-fluid" />
       </section>
 
       <section id="crops" class="mt-4">
@@ -128,7 +79,7 @@
           entornos urbanos y áreas con recursos limitados, promoviendo una
           agricultura más eficiente y respetuosa con el medio ambiente.
         </p>
-        <img src="images/crops.jpg" alt="Cultivos" />
+        <img src="images/crops.jpg" alt="Cultivos" class="img-fluid" />
       </section>
 
       <section id="technology" class="mt-4">
@@ -189,140 +140,41 @@
         <img src="images/sustainability.jpg" alt="Sostenibilidad" />
       </section>
 
-      <section id="processes" class="mt-4">
-        <h2>Lechuga Hidropónica y Aeropónica: Innovación en la Agricultura</h2>
-
-        <h3>Lechuga Hidropónica</h3>
+      <section id="contact" class="mt-4">
+        <h2>Contacto</h2>
         <p>
-          La hidroponía es un método innovador de cultivo sin suelo, donde las
-          plantas crecen en soluciones nutritivas acuosas. Este sistema permite
-          el cultivo de lechugas de manera eficiente y sostenible, utilizando
-          menos agua y espacio que los métodos tradicionales.
-        </p>
-        <p><strong>Ventajas de la Hidroponía:</strong></p>
-        <ul>
-          <li>
-            Uso eficiente del agua: La hidroponía utiliza hasta un 90% menos
-            agua que la agricultura convencional.
-          </li>
-          <li>
-            Control de nutrientes: Los nutrientes son suministrados directamente
-            a las raíces, lo que maximiza el crecimiento y la salud de la
-            planta.
-          </li>
-          <li>
-            Espacio reducido: Las plantas pueden ser cultivadas verticalmente,
-            ahorrando espacio y permitiendo el cultivo en áreas urbanas.
-          </li>
-          <li>
-            Reducción de pesticidas: Al estar en un ambiente controlado, las
-            plantas están menos expuestas a plagas y enfermedades.
-          </li>
-        </ul>
-        <p><strong>Sistemas Hidropónicos Comunes:</strong></p>
-        <ul>
-          <li>
-            NFT (Nutrient Film Technique): Las raíces de las plantas están en
-            contacto constante con una fina capa de solución nutritiva.
-          </li>
-          <li>
-            DWC (Deep Water Culture): Las raíces están sumergidas en una
-            solución rica en oxígeno y nutrientes.
-          </li>
-          <li>
-            Sistemas de Ebb and Flow (Flujo y reflujo): Las raíces se inundan
-            periódicamente con la solución nutritiva y luego se drenan.
-          </li>
-        </ul>
-
-        <h3>Lechuga Aeropónica</h3>
-        <p>
-          La aeroponía es otra técnica avanzada de cultivo sin suelo, donde las
-          raíces de las plantas están suspendidas en el aire y se rocían con una
-          solución nutritiva. Este método ofrece un control preciso sobre el
-          ambiente de las raíces, promoviendo un crecimiento rápido y saludable.
-        </p>
-        <p><strong>Ventajas de la Aeroponía:</strong></p>
-        <ul>
-          <li>
-            Máxima oxigenación: Las raíces reciben una gran cantidad de oxígeno,
-            lo que mejora la absorción de nutrientes.
-          </li>
-          <li>
-            Eficiencia del agua: Similar a la hidroponía, la aeroponía usa
-            significativamente menos agua.
-          </li>
-          <li>
-            Crecimiento rápido: Las condiciones ideales de nutrientes y oxígeno
-            promueven un crecimiento más rápido de las plantas.
-          </li>
-          <li>
-            Menor riesgo de enfermedades: Las raíces expuestas al aire reducen
-            la probabilidad de enfermedades radiculares.
-          </li>
-        </ul>
-        <p><strong>Implementación de la Aeroponía:</strong></p>
-        <ul>
-          <li>
-            Sistemas de nebulización: Las raíces se rocían con una fina niebla
-            de solución nutritiva a intervalos regulares.
-          </li>
-          <li>
-            Control ambiental: Es esencial mantener un ambiente controlado en
-            términos de humedad, temperatura y luz para un crecimiento óptimo.
-          </li>
-        </ul>
-
-        <h3>Consideraciones Generales</h3>
-        <p>
-          Ambos métodos, hidropónico y aeropónico, representan el futuro de la
-          agricultura, especialmente en un mundo donde los recursos son cada vez
-          más limitados. Permiten cultivar lechugas y otros vegetales de manera
-          sostenible, eficiente y en cualquier lugar, desde grandes ciudades
-          hasta zonas desérticas.
-        </p>
-
-        <h3>Beneficios Ambientales:</h3>
-        <ul>
-          <li>
-            Reducción del uso de tierras agrícolas: Menos necesidad de
-            deforestar para crear campos de cultivo.
-          </li>
-          <li>
-            Disminución del transporte: Cultivar en entornos urbanos reduce la
-            distancia que los productos deben recorrer para llegar al consumidor
-            final.
-          </li>
-          <li>
-            Conservación del agua: Métodos más eficientes en el uso del agua
-            contribuyen a la conservación de este recurso vital.
-          </li>
-        </ul>
-        <p>
-          La lechuga hidropónica y aeropónica no solo ofrece una alternativa a
-          la agricultura tradicional, sino que también abre nuevas posibilidades
-          para la producción de alimentos frescos y saludables en todo el mundo.
+          Para obtener más información sobre nuestros cultivos hidropónicos y
+          aeropónicos, así como nuestras soluciones tecnológicas y prácticas
+          sostenibles, no dudes en ponerte en contacto con nosotros. Puedes
+          enviarnos un correo electrónico a
+          <a href="mailto:info@researckoy.com">info@researckoy.com</a> o
+          llamarnos al +57 1 234 5678. Estamos aquí para responder a tus
+          preguntas y ofrecerte la mejor asesoría en el ámbito de la agricultura
+          moderna.
         </p>
       </section>
     </div>
 
-    <footer class="container mt-4">
-      <p class="text-center">&copy; 2024 Agronomía y Agricultura</p>
-    </footer>
 
-    <!-- Botón de WhatsApp -->
     <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-        alt="WhatsApp"
-      />
-      Contáctanos
-    </a>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+        />
+        Contáctanos
+      </a>
+  
+
+    <footer>
+      <p>&copy; 2024 RESEARCH KOY SAS. Todos los derechos reservados.</p>
+    </footer>
 
     <!-- Enlazar Bootstrap JS y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Enlazar código JavaScript personalizado -->
     <script src="script.js"></script>
   </body>
 </html>
