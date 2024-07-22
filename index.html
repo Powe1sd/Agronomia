@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agronomía y Agricultura</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- Enlazar Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <style>
       /* Agrega estilos para las imágenes pequeñas */
       img {
-        max-width: 700px;
+        max-width: 100%;
         height: auto;
         display: block;
         margin: 10px auto;
@@ -17,26 +18,58 @@
       /* Estilo para el botón de WhatsApp */
       .whatsapp-button {
         position: fixed;
-        bottom: -30px;
-        right: 6px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
         color: white;
-        padding: 20px 20px;
-        border-radius: 5px;
-        font-size: 16px;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 18px;
         text-align: center;
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
 
       .whatsapp-button img {
-        width: 70px;
+        width: 32px; /* Tamaño del icono de WhatsApp */
+        height: auto;
         vertical-align: middle;
+      }
+
+      header {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      footer {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>RESEARCH KOY SAS</h1>
-      <nav>
+    <header class="container">
+      <h1 class="text-center">RESEARCH KOY SAS</h1>
+      <nav class="text-center">
         <ul>
           <li><a href="#intro">Introducción</a></li>
           <li><a href="#crops">Cultivos</a></li>
@@ -47,226 +80,228 @@
       </nav>
     </header>
 
-    <h2>Cultivos hidropónicos</h2>
+    <div class="container mt-4">
+      <h2>Cultivos hidropónicos</h2>
 
-    <div class="video-container">
-      <video controls>
-        <source src="video/proceso.mp4" type="video/mp4" />
-        Tu navegador no soporta la reproducción de videos.
-      </video>
+      <div class="video-container mb-4">
+        <video class="w-100" controls>
+          <source src="video/proceso.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de videos.
+        </video>
+      </div>
+
+      <section id="intro">
+        <h2>Introducción</h2>
+        <p>
+          Los cultivos hidropónicos son una técnica avanzada de agricultura que
+          permite el crecimiento de plantas sin necesidad de suelo. En este
+          método, las plantas crecen en soluciones nutritivas acuosas que
+          proporcionan todos los elementos esenciales para su desarrollo. La
+          hidroponía ofrece múltiples ventajas, como un uso más eficiente del
+          agua, un control preciso de nutrientes y la posibilidad de cultivar en
+          espacios reducidos, como áreas urbanas o interiores. Este sistema
+          también reduce la necesidad de pesticidas y puede incrementar la
+          velocidad de crecimiento de las plantas, promoviendo una agricultura más
+          sostenible y productiva.
+        </p>
+        <img src="img2/im2.jpg" alt="Campo de cultivo" />
+      </section>
+
+      <section id="crops" class="mt-4">
+        <h2>Cultivos</h2>
+        <p>
+          Los cultivos hidropónicos y aeropónicos representan métodos innovadores
+          de agricultura sin suelo. En la hidroponía, las plantas crecen en
+          soluciones nutritivas acuosas, lo que permite un uso eficiente del agua
+          y un control preciso de los nutrientes. Este método es ideal para
+          espacios reducidos y reduce la exposición a plagas y enfermedades. Por
+          otro lado, en la aeroponía, las raíces de las plantas están suspendidas
+          en el aire y se rocían con una fina niebla de solución nutritiva. Este
+          enfoque maximiza la oxigenación de las raíces y puede acelerar el
+          crecimiento de las plantas, además de ofrecer un gran control sobre el
+          ambiente de cultivo. Ambos métodos son sostenibles y adecuados para la
+          producción de alimentos frescos en entornos urbanos y áreas con recursos
+          limitados, promoviendo una agricultura más eficiente y respetuosa con el
+          medio ambiente.
+        </p>
+        <img src="images/crops.jpg" alt="Cultivos" />
+      </section>
+
+      <section id="technology" class="mt-4">
+        <h2>Tecnología</h2>
+        <p>
+          La tecnología en cultivos hidropónicos y aeropónicos ha revolucionado la
+          agricultura moderna, ofreciendo soluciones avanzadas para el cultivo de
+          plantas en ambientes controlados. En la hidroponía, se utilizan sistemas
+          de cultivo en los que las plantas son cultivadas en una solución
+          nutritiva sin suelo. Esta técnica emplea tecnología precisa para mezclar
+          y suministrar nutrientes, manteniendo un entorno controlado que optimiza
+          el crecimiento de las plantas. Los sistemas hidropónicos comunes
+          incluyen la Técnica de Película Nutritiva (NFT), la Cultura en Agua
+          Profunda (DWC), y los sistemas de flujo y reflujo (Ebb and Flow). Cada
+          uno de estos sistemas utiliza sensores y controladores automatizados
+          para ajustar parámetros críticos como el pH y la concentración de
+          nutrientes, lo que permite una agricultura altamente eficiente y
+          sostenible. Por otro lado, la aeroponía representa una tecnología aún
+          más avanzada, donde las raíces de las plantas se mantienen en un entorno
+          de aire y se rocían con una fina niebla nutritiva. Este método emplea
+          nebulizadores y sistemas de control de ambiente que garantizan una
+          distribución uniforme de nutrientes y oxígeno, maximizando la eficiencia
+          del crecimiento. La aeroponía permite un control preciso sobre variables
+          como la humedad y la temperatura, facilitando un desarrollo óptimo de
+          las plantas en un espacio reducido. Ambos métodos incorporan tecnologías
+          emergentes como sensores de humedad, controladores de ambiente y
+          sistemas de automatización que optimizan los procesos de cultivo,
+          reducen el uso de recursos y minimizan el impacto ambiental. Estas
+          tecnologías están impulsando una transformación en la agricultura al
+          permitir la producción de alimentos frescos en entornos urbanos y
+          condiciones adversas, promoviendo prácticas agrícolas más sostenibles y
+          resilientes.
+        </p>
+        <img src="images/technology.jpg" alt="Tecnología agrícola" />
+      </section>
+
+      <section id="sustainability" class="mt-4">
+        <h2>Sostenibilidad</h2>
+        <p>
+          Los cultivos hidropónicos y aeropónicos destacan por su contribución a
+          la sostenibilidad ambiental. Estos métodos ofrecen varias ventajas
+          clave: Uso Eficiente del Agua: Utilizan hasta un 90% menos agua en
+          comparación con la agricultura tradicional, gracias a sistemas de
+          recirculación y niebla fina. Reducción del Uso de Suelo: Permiten el
+          cultivo en espacios reducidos y áreas urbanas, reduciendo la necesidad
+          de deforestar y preservar terrenos naturales. Menor Uso de Pesticidas:
+          Al mantener un entorno controlado, disminuyen la necesidad de pesticidas
+          químicos, promoviendo alimentos más limpios y saludables. Reducción de
+          Residuos: Generan menos residuos agrícolas y optimizan el uso de
+          nutrientes, minimizando el impacto ambiental. Producción Local:
+          Facilitan el cultivo de alimentos frescos en áreas urbanas, reduciendo
+          las emisiones de gases de efecto invernadero asociadas con el
+          transporte. Estos métodos de cultivo no solo mejoran la eficiencia en la
+          producción de alimentos, sino que también promueven prácticas agrícolas
+          que respetan y conservan el medio ambiente.
+        </p>
+        <img src="images/sustainability.jpg" alt="Sostenibilidad" />
+      </section>
+
+      <section id="processes" class="mt-4">
+        <h2>Lechuga Hidropónica y Aeropónica: Innovación en la Agricultura</h2>
+
+        <h3>Lechuga Hidropónica</h3>
+        <p>
+          La hidroponía es un método innovador de cultivo sin suelo, donde las
+          plantas crecen en soluciones nutritivas acuosas. Este sistema permite el
+          cultivo de lechugas de manera eficiente y sostenible, utilizando menos
+          agua y espacio que los métodos tradicionales.
+        </p>
+        <p><strong>Ventajas de la Hidroponía:</strong></p>
+        <ul>
+          <li>
+            Uso eficiente del agua: La hidroponía utiliza hasta un 90% menos agua
+            que la agricultura convencional.
+          </li>
+          <li>
+            Control de nutrientes: Los nutrientes son suministrados directamente a
+            las raíces, lo que maximiza el crecimiento y la salud de la planta.
+          </li>
+          <li>
+            Espacio reducido: Las plantas pueden ser cultivadas verticalmente,
+            ahorrando espacio y permitiendo el cultivo en áreas urbanas.
+          </li>
+          <li>
+            Reducción de pesticidas: Al estar en un ambiente controlado, las
+            plantas están menos expuestas a plagas y enfermedades.
+          </li>
+        </ul>
+        <p><strong>Sistemas Hidropónicos Comunes:</strong></p>
+        <ul>
+          <li>
+            NFT (Nutrient Film Technique): Las raíces de las plantas están en
+            contacto constante con una fina capa de solución nutritiva.
+          </li>
+          <li>
+            DWC (Deep Water Culture): Las raíces están sumergidas en una solución
+            rica en oxígeno y nutrientes.
+          </li>
+          <li>
+            Sistemas de Ebb and Flow (Flujo y reflujo): Las raíces se inundan
+            periódicamente con la solución nutritiva y luego se drenan.
+          </li>
+        </ul>
+
+        <h3>Lechuga Aeropónica</h3>
+        <p>
+          La aeroponía es otra técnica avanzada de cultivo sin suelo, donde las
+          raíces de las plantas están suspendidas en el aire y se rocían con una
+          solución nutritiva. Este método ofrece un control preciso sobre el
+          ambiente de las raíces, promoviendo un crecimiento rápido y saludable.
+        </p>
+        <p><strong>Ventajas de la Aeroponía:</strong></p>
+        <ul>
+          <li>
+            Máxima oxigenación: Las raíces reciben una gran cantidad de oxígeno,
+            lo que mejora la absorción de nutrientes.
+          </li>
+          <li>
+            Eficiencia del agua: Similar a la hidroponía, la aeroponía usa
+            significativamente menos agua.
+          </li>
+          <li>
+            Crecimiento rápido: Las condiciones ideales de nutrientes y oxígeno
+            promueven un crecimiento más rápido de las plantas.
+          </li>
+          <li>
+            Menor riesgo de enfermedades: Las raíces expuestas al aire reducen la
+            probabilidad de enfermedades radiculares.
+          </li>
+        </ul>
+        <p><strong>Implementación de la Aeroponía:</strong></p>
+        <ul>
+          <li>
+            Sistemas de nebulización: Las raíces se rocían con una fina niebla de
+            solución nutritiva a intervalos regulares.
+          </li>
+          <li>
+            Control ambiental: Es esencial mantener un ambiente controlado en
+            términos de humedad, temperatura y luz para un crecimiento óptimo.
+          </li>
+        </ul>
+
+        <h3>Consideraciones Generales</h3>
+        <p>
+          Ambos métodos, hidropónico y aeropónico, representan el futuro de la
+          agricultura, especialmente en un mundo donde los recursos son cada vez
+          más limitados. Permiten cultivar lechugas y otros vegetales de manera
+          sostenible, eficiente y en cualquier lugar, desde grandes ciudades hasta
+          zonas desérticas.
+        </p>
+
+        <h3>Beneficios Ambientales:</h3>
+        <ul>
+          <li>
+            Reducción del uso de tierras agrícolas: Menos necesidad de deforestar
+            para crear campos de cultivo.
+          </li>
+          <li>
+            Disminución del transporte: Cultivar en entornos urbanos reduce la
+            distancia que los productos deben recorrer para llegar al consumidor
+            final.
+          </li>
+          <li>
+            Conservación del agua: Métodos más eficientes en el uso del agua
+            contribuyen a la conservación de este recurso vital.
+          </li>
+        </ul>
+        <p>
+          La lechuga hidropónica y aeropónica no solo ofrece una alternativa a la
+          agricultura tradicional, sino que también abre nuevas posibilidades para
+          la producción de alimentos frescos y saludables en todo el mundo.
+        </p>
+      </section>
     </div>
 
-    <section id="intro">
-      <h2>Introducción</h2>
-      <p>
-        Los cultivos hidropónicos son una técnica avanzada de agricultura que
-        permite el crecimiento de plantas sin necesidad de suelo. En este
-        método, las plantas crecen en soluciones nutritivas acuosas que
-        proporcionan todos los elementos esenciales para su desarrollo. La
-        hidroponía ofrece múltiples ventajas, como un uso más eficiente del
-        agua, un control preciso de nutrientes y la posibilidad de cultivar en
-        espacios reducidos, como áreas urbanas o interiores. Este sistema
-        también reduce la necesidad de pesticidas y puede incrementar la
-        velocidad de crecimiento de las plantas, promoviendo una agricultura más
-        sostenible y productiva.
-      </p>
-      <img src="img2/im2.jpg" alt="Campo de cultivo" />
-    </section>
-
-    <section id="crops">
-      <h2>Cultivos</h2>
-      <p>
-        Los cultivos hidropónicos y aeropónicos representan métodos innovadores
-        de agricultura sin suelo. En la hidroponía, las plantas crecen en
-        soluciones nutritivas acuosas, lo que permite un uso eficiente del agua
-        y un control preciso de los nutrientes. Este método es ideal para
-        espacios reducidos y reduce la exposición a plagas y enfermedades. Por
-        otro lado, en la aeroponía, las raíces de las plantas están suspendidas
-        en el aire y se rocían con una fina niebla de solución nutritiva. Este
-        enfoque maximiza la oxigenación de las raíces y puede acelerar el
-        crecimiento de las plantas, además de ofrecer un gran control sobre el
-        ambiente de cultivo. Ambos métodos son sostenibles y adecuados para la
-        producción de alimentos frescos en entornos urbanos y áreas con recursos
-        limitados, promoviendo una agricultura más eficiente y respetuosa con el
-        medio ambiente.
-      </p>
-      <img src="images/crops.jpg" alt="Cultivos" />
-    </section>
-
-    <section id="technology">
-      <h2>Tecnología</h2>
-      <p>
-        La tecnología en cultivos hidropónicos y aeropónicos ha revolucionado la
-        agricultura moderna, ofreciendo soluciones avanzadas para el cultivo de
-        plantas en ambientes controlados. En la hidroponía, se utilizan sistemas
-        de cultivo en los que las plantas son cultivadas en una solución
-        nutritiva sin suelo. Esta técnica emplea tecnología precisa para mezclar
-        y suministrar nutrientes, manteniendo un entorno controlado que optimiza
-        el crecimiento de las plantas. Los sistemas hidropónicos comunes
-        incluyen la Técnica de Película Nutritiva (NFT), la Cultura en Agua
-        Profunda (DWC), y los sistemas de flujo y reflujo (Ebb and Flow). Cada
-        uno de estos sistemas utiliza sensores y controladores automatizados
-        para ajustar parámetros críticos como el pH y la concentración de
-        nutrientes, lo que permite una agricultura altamente eficiente y
-        sostenible. Por otro lado, la aeroponía representa una tecnología aún
-        más avanzada, donde las raíces de las plantas se mantienen en un entorno
-        de aire y se rocían con una fina niebla nutritiva. Este método emplea
-        nebulizadores y sistemas de control de ambiente que garantizan una
-        distribución uniforme de nutrientes y oxígeno, maximizando la eficiencia
-        del crecimiento. La aeroponía permite un control preciso sobre variables
-        como la humedad y la temperatura, facilitando un desarrollo óptimo de
-        las plantas en un espacio reducido. Ambos métodos incorporan tecnologías
-        emergentes como sensores de humedad, controladores de ambiente y
-        sistemas de automatización que optimizan los procesos de cultivo,
-        reducen el uso de recursos y minimizan el impacto ambiental. Estas
-        tecnologías están impulsando una transformación en la agricultura al
-        permitir la producción de alimentos frescos en entornos urbanos y
-        condiciones adversas, promoviendo prácticas agrícolas más sostenibles y
-        resilientes.
-      </p>
-      <img src="images/technology.jpg" alt="Tecnología agrícola" />
-    </section>
-
-    <section id="sustainability">
-      <h2>Sostenibilidad</h2>
-      <p>
-        Los cultivos hidropónicos y aeropónicos destacan por su contribución a
-        la sostenibilidad ambiental. Estos métodos ofrecen varias ventajas
-        clave: Uso Eficiente del Agua: Utilizan hasta un 90% menos agua en
-        comparación con la agricultura tradicional, gracias a sistemas de
-        recirculación y niebla fina. Reducción del Uso de Suelo: Permiten el
-        cultivo en espacios reducidos y áreas urbanas, reduciendo la necesidad
-        de deforestar y preservar terrenos naturales. Menor Uso de Pesticidas:
-        Al mantener un entorno controlado, disminuyen la necesidad de pesticidas
-        químicos, promoviendo alimentos más limpios y saludables. Reducción de
-        Residuos: Generan menos residuos agrícolas y optimizan el uso de
-        nutrientes, minimizando el impacto ambiental. Producción Local:
-        Facilitan el cultivo de alimentos frescos en áreas urbanas, reduciendo
-        las emisiones de gases de efecto invernadero asociadas con el
-        transporte. Estos métodos de cultivo no solo mejoran la eficiencia en la
-        producción de alimentos, sino que también promueven prácticas agrícolas
-        que respetan y conservan el medio ambiente.
-      </p>
-      <img src="images/sustainability.jpg" alt="Sostenibilidad" />
-    </section>
-
-    <section id="processes">
-      <h2>Lechuga Hidropónica y Aeropónica: Innovación en la Agricultura</h2>
-
-      <h3>Lechuga Hidropónica</h3>
-      <p>
-        La hidroponía es un método innovador de cultivo sin suelo, donde las
-        plantas crecen en soluciones nutritivas acuosas. Este sistema permite el
-        cultivo de lechugas de manera eficiente y sostenible, utilizando menos
-        agua y espacio que los métodos tradicionales.
-      </p>
-      <p><strong>Ventajas de la Hidroponía:</strong></p>
-      <ul>
-        <li>
-          Uso eficiente del agua: La hidroponía utiliza hasta un 90% menos agua
-          que la agricultura convencional.
-        </li>
-        <li>
-          Control de nutrientes: Los nutrientes son suministrados directamente a
-          las raíces, lo que maximiza el crecimiento y la salud de la planta.
-        </li>
-        <li>
-          Espacio reducido: Las plantas pueden ser cultivadas verticalmente,
-          ahorrando espacio y permitiendo el cultivo en áreas urbanas.
-        </li>
-        <li>
-          Reducción de pesticidas: Al estar en un ambiente controlado, las
-          plantas están menos expuestas a plagas y enfermedades.
-        </li>
-      </ul>
-      <p><strong>Sistemas Hidropónicos Comunes:</strong></p>
-      <ul>
-        <li>
-          NFT (Nutrient Film Technique): Las raíces de las plantas están en
-          contacto constante con una fina capa de solución nutritiva.
-        </li>
-        <li>
-          DWC (Deep Water Culture): Las raíces están sumergidas en una solución
-          rica en oxígeno y nutrientes.
-        </li>
-        <li>
-          Sistemas de Ebb and Flow (Flujo y reflujo): Las raíces se inundan
-          periódicamente con la solución nutritiva y luego se drenan.
-        </li>
-      </ul>
-
-      <h3>Lechuga Aeropónica</h3>
-      <p>
-        La aeroponía es otra técnica avanzada de cultivo sin suelo, donde las
-        raíces de las plantas están suspendidas en el aire y se rocían con una
-        solución nutritiva. Este método ofrece un control preciso sobre el
-        ambiente de las raíces, promoviendo un crecimiento rápido y saludable.
-      </p>
-      <p><strong>Ventajas de la Aeroponía:</strong></p>
-      <ul>
-        <li>
-          Máxima oxigenación: Las raíces reciben una gran cantidad de oxígeno,
-          lo que mejora la absorción de nutrientes.
-        </li>
-        <li>
-          Eficiencia del agua: Similar a la hidroponía, la aeroponía usa
-          significativamente menos agua.
-        </li>
-        <li>
-          Crecimiento rápido: Las condiciones ideales de nutrientes y oxígeno
-          promueven un crecimiento más rápido de las plantas.
-        </li>
-        <li>
-          Menor riesgo de enfermedades: Las raíces expuestas al aire reducen la
-          probabilidad de enfermedades radiculares.
-        </li>
-      </ul>
-      <p><strong>Implementación de la Aeroponía:</strong></p>
-      <ul>
-        <li>
-          Sistemas de nebulización: Las raíces se rocían con una fina niebla de
-          solución nutritiva a intervalos regulares.
-        </li>
-        <li>
-          Control ambiental: Es esencial mantener un ambiente controlado en
-          términos de humedad, temperatura y luz para un crecimiento óptimo.
-        </li>
-      </ul>
-
-      <h3>Consideraciones Generales</h3>
-      <p>
-        Ambos métodos, hidropónico y aeropónico, representan el futuro de la
-        agricultura, especialmente en un mundo donde los recursos son cada vez
-        más limitados. Permiten cultivar lechugas y otros vegetales de manera
-        sostenible, eficiente y en cualquier lugar, desde grandes ciudades hasta
-        zonas desérticas.
-      </p>
-
-      <h3>Beneficios Ambientales:</h3>
-      <ul>
-        <li>
-          Reducción del uso de tierras agrícolas: Menos necesidad de deforestar
-          para crear campos de cultivo.
-        </li>
-        <li>
-          Disminución del transporte: Cultivar en entornos urbanos reduce la
-          distancia que los productos deben recorrer para llegar al consumidor
-          final.
-        </li>
-        <li>
-          Conservación del agua: Métodos más eficientes en el uso del agua
-          contribuyen a la conservación de este recurso vital.
-        </li>
-      </ul>
-      <p>
-        La lechuga hidropónica y aeropónica no solo ofrece una alternativa a la
-        agricultura tradicional, sino que también abre nuevas posibilidades para
-        la producción de alimentos frescos y saludables en todo el mundo.
-      </p>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Agronomía y Agricultura</p>
+    <footer class="container mt-4">
+      <p class="text-center">&copy; 2024 Agronomía y Agricultura</p>
     </footer>
 
     <!-- Botón de WhatsApp -->
@@ -275,10 +310,13 @@
         src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
         alt="WhatsApp"
       />
-
       Contáctanos
     </a>
 
+    <!-- Enlazar Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
