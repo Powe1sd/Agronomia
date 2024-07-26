@@ -1,0 +1,119 @@
+/* Estilos para la sección de tienda */
+
+h1 {
+  color: white;
+  background-color: green;
+}
+
+#store h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-price {
+  font-size: 1.2em;
+  color: #28a745;
+  font-weight: bold;
+}
+
+footer {
+  background-color: green;
+  color: white;
+}
+
+.whatsapp-button {
+  bottom: 90px;
+  right: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Estilo para el botón de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: -70px;
+  right: -6%;
+  padding: 95px;
+  border-radius: 50%;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* Tamaño del icono de WhatsApp */
+.whatsapp-button img {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767px) {
+  .whatsapp-button {
+    padding: 10px;
+    font-size: 2px;
+    bottom: 10px;
+    right: -10px;
+  }
+
+  .whatsapp-button img {
+    width: 80px;
+  }
+}
+
+/* Asegura que las tarjetas de productos se muestren en 3 columnas en dispositivos móviles y más grandes */
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+/* Estilo para las tarjetas de productos */
+.card {
+  margin-bottom: 30px;
+}
+
+/* Estilo para el contenedor de imágenes */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Estilo para las imágenes */
+.image-container img {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+}
