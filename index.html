@@ -10,8 +10,42 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <style>
+      /* Estilo para la superposición */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999; /* Asegura que esté encima de todo el contenido */
+        text-align: center;
+      }
+      .overlay-content {
+        background: #fff;
+        color: #000;
+        padding: 20px;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
+    <!-- Superposición para el mensaje de actualización -->
+    <div class="overlay">
+      <div class="overlay-content">
+        <h2>Actualización importante</h2>
+        <p>
+          Estamos actualizando nuestro método de pago. Por favor, utilice el
+          método alternativo hasta nuevo aviso. ¡Gracias por su comprensión!
+        </p>
+      </div>
+    </div>
+
     <header class="container">
       <h1 class="text-center">RESEARCH KOY SAS</h1>
 
@@ -102,7 +136,7 @@
         <img src="productos/proce4.jpeg" alt="Cultivos" class="img-fluid" />
       </section>
 
-      <section id="crops" class="mt-4">
+      <section id="procesos" class="mt-4">
         <h2>Procesos</h2>
         <p>
           Los procesos hidropónicos representan un avance significativo en la
@@ -160,77 +194,47 @@
         />
       </section>
 
-      <section id="crops" class="mt-4">
-        <h2>Procesos</h2>
-        <p>
-          Los procesos hidropónicos representan un avance significativo en la
-          agricultura moderna, permitiendo el cultivo de plantas sin necesidad
-          de suelo. En estos sistemas, las plantas crecen en soluciones
-          nutritivas acuosas que proporcionan todos los elementos esenciales
-          para su desarrollo. El proceso comienza con la disolución de
-          nutrientes en agua, creando una mezcla balanceada que se distribuye
-          directamente a las raíces de las plantas. Este método permite un uso
-          altamente eficiente del agua y facilita un control preciso de los
-          nutrientes y el pH, lo que resulta en un crecimiento más rápido y
-          saludable de las plantas.
-        </p>
-        <img src="productos/proce3.jpeg" alt="Cultivos" class="img-fluid" />
-        <img src="productos/proce2.jpeg" alt="Cultivos" class="img-fluid" />
-      </section>
-
       <section id="sustainability" class="mt-4">
         <h2>Sostenibilidad</h2>
         <p>
-          Los cultivos hidropónicos y aeropónicos destacan por su contribución a
-          la sostenibilidad ambiental. Estos métodos ofrecen varias ventajas
-          clave: Uso Eficiente del Agua: Utilizan hasta un 90% menos agua en
-          comparación con la agricultura tradicional, gracias a sistemas de
-          recirculación y niebla fina. Reducción del Uso de Suelo: Permiten el
-          cultivo en espacios reducidos y áreas urbanas, reduciendo la necesidad
-          de deforestar y preservar terrenos naturales. Menor Uso de Pesticidas:
-          Al mantener un entorno controlado, disminuyen la necesidad de
-          pesticidas químicos, promoviendo alimentos más limpios y saludables.
-          Reducción de Residuos: Generan menos residuos agrícolas y optimizan el
-          uso de nutrientes, minimizando el impacto ambiental. Producción Local:
-          Facilitan el cultivo de alimentos frescos en áreas urbanas, reduciendo
-          las emisiones de gases de efecto invernadero asociadas con el
-          transporte. Estos métodos de cultivo no solo mejoran la eficiencia en
-          la producción de alimentos, sino que también promueven prácticas
-          agrícolas que respetan y conservan el medio ambiente.
+          La sostenibilidad en la agricultura es fundamental para garantizar un
+          futuro saludable y equilibrado para el medio ambiente y la sociedad.
+          Los cultivos hidropónicos y aeropónicos representan enfoques
+          innovadores que promueven la sostenibilidad al reducir el uso de
+          recursos naturales y minimizar el impacto ambiental. Estos sistemas de
+          cultivo utilizan menos agua en comparación con la agricultura
+          tradicional, ya que la solución nutritiva se recicla y se reutiliza en
+          el sistema. Además, los métodos hidropónicos y aeropónicos permiten un
+          control preciso sobre los nutrientes, reduciendo la necesidad de
+          pesticidas y fertilizantes químicos. La producción de alimentos en
+          entornos controlados también reduce la huella de carbono asociada al
+          transporte y la distribución, ya que se pueden cultivar productos
+          frescos en áreas urbanas cercanas al consumidor. La implementación de
+          estos métodos en comunidades urbanas y áreas con recursos limitados no
+          solo promueve una producción de alimentos más eficiente, sino que
+          también fomenta la autosuficiencia alimentaria y apoya la seguridad
+          alimentaria global. Al adoptar prácticas agrícolas sostenibles como la
+          hidroponía y la aeroponía, se contribuye a la conservación del medio
+          ambiente, se mejora la calidad de los alimentos y se promueve un
+          futuro más verde y resiliente.
         </p>
-
-        <img src="productos/im11.jpeg" alt="Sostenibilidad" class="img-fluid" />
-        <img src="productos/im12.jpeg" alt="Sostenibilidad" class="img-fluid" />
-      </section>
-
-      <section id="procesos" class="mt-4">
-        <h2>Grandes Escalas y Agricultura Vertical</h2>
-        <p>
-          La agricultura hidropónica a gran escala y la agricultura vertical
-          están revolucionando la producción de alimentos en todo el mundo,
-          ofreciendo soluciones innovadoras para enfrentar desafíos como la
-          escasez de tierras cultivables, la necesidad de producción sostenible
-          y la seguridad alimentaria en zonas urbanas. Agricultura Hidropónica a
-          Gran Escala La hidroponía a gran escala se refiere a la implementación
-          de sistemas hidropónicos en invernaderos comerciales y granjas
-          especializadas que operan con una alta capacidad de producción. Estos
-          sistemas aprovechan al máximo el espacio disponible y permiten un
-          control preciso sobre el entorno de cultivo, optimizando el uso de
-          recursos y mejorando la eficiencia de la producción.
-        </p>
-
-        <img src="productos/im13.jpeg" alt="Sostenibilidad" class="img-fluid" />
-        <img src="productos/im14.jpeg" alt="Sostenibilidad" class="img-fluid" />
+        <img src="img2/im5.jpg" alt="Sostenibilidad" class="img-fluid" />
+        <img
+          src="productos/proce5.jpeg"
+          alt="Sostenibilidad"
+          class="img-fluid"
+        />
       </section>
 
       <section id="contact" class="mt-4">
         <h2>Contacto</h2>
         <p>
-          Para más información sobre nuestros cultivos y tecnologías,
-          contáctanos en
-          <a href="mailto:info@researckoy.com">info@researckoy.com</a> o al +57
-          3136481715 Estamos aquí para ayudarte con tus consultas.
+          Si tienes alguna pregunta o deseas más información sobre nuestros
+          servicios, no dudes en ponerte en contacto con nosotros. Estaremos
+          encantados de atenderte y proporcionarte la información que necesites.
         </p>
+        <p>Teléfono: 3136481715</p>
+        <p>Correo electrónico: info@researchkoy.com</p>
       </section>
     </div>
 
@@ -241,7 +245,7 @@
       />
     </a>
 
-    <footer>
+    <footer class="text-center mt-4">
       <p>&copy; 2024 RESEARCH KOY SAS. Todos los derechos reservados.</p>
     </footer>
 
